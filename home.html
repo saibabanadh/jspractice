@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="javascript_practice">
+    <meta name="author" content="saibabanadh">
+    <title>Javascript Learning</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">JavaScript Practice</a>
+                </li>
+                <li>
+                    <a href="#one">Validations</a>
+                </li>
+                <li>
+                    <a href="#two">Exercise-1</a>
+                </li>
+                <li>
+                    <a href="#three">Exercise-2</a>
+                </li>
+                <li>
+                    <a href="#four">Exercise-3</a>
+                </li>
+                <li>
+                    <a href="#five">Exercise-4</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <a href="#menu-toggle" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+            <br>
+            <section id="one" class="panel">
+                <div id="main">
+                    <div class="container">
+                        <h1 class="tab-heading">Validations</h1>
+                        <ul id="tabs">
+                            <li class="active">Inputs</li>
+                            <li>Arrays</li>
+                            <li>Programs</li>
+                                                      
+                        </ul>
+                        <ul id="tab">
+                            <li class="active">
+                                <h2>Inputs Validation</h2>
+                                Please write a functions to validate the below fields in <i><b>validationscript.js</b></i> file. Verify the status below to correct the validations.
+                                <br /><br />
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                         <input type="text" class="form-control" id="name" placeholder="Name(Only Chars, Spaces)">
+                                    </div>
+                                    <div class="col-md-4">
+                                         <button type="submit" class="btn btn-default" onclick="validateName()">Validate</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                         <input type="text" class="form-control" id="number"
+                                         onkeypress="return allowNumbersOnly(event)" placeholder="Allow Numbers only while entering">
+                                    </div>
+                                    <div class="col-md-4">
+                                         <button type="submit" class="btn btn-default" onclick="validateNumbers()">Validate</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                         <input type="text" class="form-control" id="email" placeholder="Validate Email Address">
+                                    </div>
+                                    <div class="col-md-4">
+                                         <button type="submit" class="btn btn-default" onclick="validateEmail()">Validate</button>
+                                    </div>
+                                </div>
+                              
+
+                                <br>
+                                
+
+                                <div class="col-md-4 col-sm-4">
+                                   <button type="input" class="btn btn-default" onclick="validate1()">Validate All</button>
+                                </div>
+                                
+                            </li>
+                            <li>
+                                <h2>Arrays</h2>
+                                Below are some Array related methods, please write the functions to understand them to solve real time problems using javascript. Please write them in arrays.js
+                                <br>
+                                    <p><b>PUSH</b></p>
+                                    <p><b>POP</b></p>
+                                    <p><b>SHIFT</b></p>
+                                    <p><b>UNSHIFT</b></p>
+                                    <p><b>DELETE</b></p>
+                                    <p><b>SPLICE</b></p>
+                                    <p><b>SORT- Strings, Numbers</b></p>
+                                    <p><b>REVERSE</b></p>
+                                    <p><b>JOIN</b></p>
+                                    <p><b>CONCAT</b></p>
+                                    <p><b>SLICE</b></p>
+                            </li>
+                            <li>
+                                <h2>Array Programs</h2>
+                                Below are some array related problems, please write the required functions to  solve the problems using javascript. Please write them in programs.js
+                                <br>
+                                    <p><b>Reverse a String: "HAPPIEST"</b></p>
+                                    <p><b>Reverse a Sentence with meaningful words:" I AM A HAPPIESTMINDS EMPLOYEE</b></p>
+                                    <p><b>Reverse each word in a Sentence:" I AM A HAPPIESTMINDS EMPLOYEE</b></p>
+                                    <p><b>Find the Max and Min value in an Array: [30,40,12,4,69,43,47]</b></p>
+                                    <p><b>Find the all prime numbers in a given Array: [43,79,87,2,4,5,9,23,29]</b></p>
+                                    <p><b>Write a program to verify the given string is palindrome or not?</b></p>
+                                   
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- #main -->
+
+
+            </section>
+            <section id="two" class="panel">
+
+            </section>
+            <section id="three" class="panel">
+
+            </section>
+            <section id="four" class="panel">
+
+            </section>
+            <section id="five" class="panel">
+
+            </section>
+          
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/tabs.js"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();  $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <script type="text/javascript" src="validationscript.js"></script>
+    <!--<script type="text/javascript" src="solutionscript.js"></script>-->
+
+</body>
+
+</html>
+
